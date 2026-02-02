@@ -1,0 +1,12 @@
+<?php
+declare(strict_types=1);
+
+function isAdult(?int $age): bool {
+    if ($age === null) {
+        return false;
+    }
+    return $age >= 18;
+}
+
+// Test
+var_export(isAdult(null));
