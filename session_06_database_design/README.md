@@ -22,12 +22,14 @@ This redundancy increases storage usage and may lead to data inconsistency.
 
 2. Update Anomalies
 Because of redundancy, several update anomalies may occur.
-Professor Email Change**
-If a professor changes their email address, the update must be applied to multiple rows. Missing one update may result in inconsistent data.
-Course Name Change
-If a course name changes (for example from *Database Systems* to another name), every row containing that course must be updated.
-Student Name Change
 
+Professor Email Change
+If a professor changes their email address, the update must be applied to multiple rows. Missing one update may result in inconsistent data.
+
+Course Name Change
+If a course name changes (for example from Database Systems to another name), every row containing that course must be updated.
+
+Student Name Change
 If a student updates their name, the change must be made in all rows where the student appears.
 
 3. Transitive Dependencies
@@ -86,7 +88,7 @@ Attributes:
 Primary Key: (StudentID, CourseID)
 This table resolves the many-to-many relationship between students and courses.
 Final Result
-By decomposing the original table into Students, Professors, Courses, and Enrollments**, redundancy and update anomalies are removed. The resulting database structure satisfies Third Normal Form (3NF).
+By decomposing the original table into Students, Professors, Courses, and Enrollments, redundancy and update anomalies are removed. The resulting database structure satisfies Third Normal Form (3NF).
 
 Part 2: Relationships
 1. Author — Book
