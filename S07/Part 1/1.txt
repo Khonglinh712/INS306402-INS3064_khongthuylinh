@@ -1,0 +1,22 @@
+1. JOIN Distinction
+- INNER JOIN: chỉ trả về các dòng có dữ liệu khớp ở cả 2 bảng.
+- LEFT JOIN: trả về tất cả dòng từ bảng trái, kể cả khi không có bản ghi khớp ở bảng phải (các cột bên phải sẽ là NULL).
+
+2. Aggregation Logic
+- HAVING: dùng để lọc dữ liệu sau khi đã GROUP BY (sau khi tính SUM, COUNT,...).
+- WHERE: lọc dữ liệu trước khi GROUP BY nên không dùng với hàm tổng hợp.
+
+3. PDO Definition
+- PDO (PHP Data Objects) là thư viện kết nối database trong PHP.
+- Ưu điểm:
+  + Hỗ trợ nhiều loại database.
+  + Bảo mật tốt hơn nhờ Prepared Statements.
+
+4. Security (Prepared Statements)
+- Tách SQL và dữ liệu người dùng.
+- SQL chạy trước với placeholder (? hoặc :name), dữ liệu bind vào sau.
+- Ngăn SQL Injection vì dữ liệu không được coi là code SQL.
+
+5. Execution Flow
+Thứ tự:
+FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY
